@@ -458,61 +458,79 @@ h2{
 
 .footer {
   background: #0f0f0f;
-  padding: 60px 20px 40px;
-  text-align: center;
+  padding: 70px 20px 40px;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-.footer-name {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 
-.footer-name span {
-  color: #4f46e5;
+.footer-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
 }
 
 .footer-role {
-  margin: 10px 0 30px;
+  font-size: 14px;
+  color: #b3b3b3;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   font-size: 14px;
   color: #9a9a9a;
+  margin-bottom: 30px;
+}
+
+.footer-contact a {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #4f46e5;
 }
 
 .footer-socials {
   display: flex;
   justify-content: center;
-  gap: 26px;
+  gap: 30px;
   margin-bottom: 30px;
 }
 
 .footer-socials a {
-  position: relative;
   color: #aaa;
-  font-size: 14px;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 15px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
 }
 
-.footer-socials a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0%;
-  height: 1px;
-  background: #4f46e5;
-  transition: width 0.3s ease;
+.footer-socials a i {
+  font-size: 18px;
 }
 
 .footer-socials a:hover {
-  color: #fff;
+  color: #4f46e5;
 }
 
-.footer-socials a:hover::after {
-  width: 100%;
+.footer-copy {
+  font-size: 12px;
+  color: #666;
 }
+
 
 .footer-copy {
   font-size: 12px;
